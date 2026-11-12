@@ -1,187 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#341b5a">
+    <meta name="description" content="Portfólio de Sthefany Pereira, desenvolvedora back-end com foco em Python e APIs REST.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Portifólio</title>
+    <title>Sthefany Pereira | Desenvolvedora Back-end</title>
 </head>
 
 <body>
+    <div class="particulas" aria-hidden="true"></div>
 
-    <div class="particulas"></div>
-
-    <nav class="navegacao">
+    <nav class="navegacao" aria-label="Navegação principal">
+        <a class="marca" href="#inicio" aria-label="Sthefany Pereira, início">SP<span>.</span></a>
         <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link">início</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menu-link">Contatos</a>
-            </li>
+            <li><a href="#inicio" class="menu-link" aria-current="page">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
         </ul>
     </nav>
 
-
-    <main id="início" class="cabecalho">
-
-        <img src="./img/avatar.png" alt="foto de sthefany" class="foto-perfil">
-        <h1>Sthefany Pereira</h1>
-        <p class="cabecalho-sub-titulo"> Desenvolvedora Back-end</p>
-
-        <div class="links-sociais">
-            <a href="https://github.com/sthefanypereira521-dotcom" target="_blank" rel="noopener noreferrer"
-                class="link-social" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/sthefany-pereira-dev" target="_blank" rel="noopener noreferrer"
-                class="link-social" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-
-
-        </div>
-
-        <div class="minha-stack">
-            <h3 class="stack-titulo">Minha Stack</h3>
-
-            <div class="stack-lista">
-
-                <div class="stack-item">
-                    <i class="fa-brands fa-python"></i>
-                    <span>Python</span>
+    <main>
+        <section id="inicio" class="cabecalho" aria-labelledby="titulo-principal">
+            <div class="hero-conteudo">
+                <p class="eyebrow">Desenvolvimento de software · Brasil</p>
+                <h1 id="titulo-principal">Sthefany <span>Pereira</span></h1>
+                <p class="cabecalho-sub-titulo">Desenvolvedora Back-end</p>
+                <p class="hero-resumo">Construo APIs e soluções back-end com Python, com atenção à organização, segurança e qualidade do código.</p>
+                <div class="links-sociais">
+                    <a href="https://github.com/sthefanypereira521-dotcom" target="_blank" rel="noopener noreferrer" class="link-social">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span><i class="fa-solid fa-arrow-up-right-from-square externo" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sthefany-pereira-dev" target="_blank" rel="noopener noreferrer" class="link-social">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span><i class="fa-solid fa-arrow-up-right-from-square externo" aria-hidden="true"></i>
+                    </a>
                 </div>
-
-                <div class="stack-item">
-                    <i class="fa-solid fa-bolt"></i>
-                    <span>FastAPI</span>
-                </div>
-
-                <div class="stack-item">
-                    <i class="fa-solid fa-database"></i>
-                    <span>SQL</span>
-                </div>
-
-                <div class="stack-item">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-
-                <div class="stack-item">
-                    <i class="fa-solid fa-database"></i>
-                    <span>PostgreSQL</span>
-                </div>
-
-
-                <div class="stack-item">
-                    <i class="fa-brands fa-docker"></i>
-                    <span>Docker</span>
-                </div>
-
+                <a class="rolar-link" href="#projetos">Conheça meus projetos <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
             </div>
-        </div>
+            <div class="hero-visual">
+                <div class="foto-moldura">
+                    <img src="./img/avatar.png" alt="Sthefany Pereira" class="foto-perfil" width="320" height="320">
+                </div>
+                <div class="hero-nota"><span class="status-ponto" aria-hidden="true"></span> Python · APIs REST · SQL</div>
+            </div>
+            <div class="minha-stack">
+                <div class="stack-cabecalho"><p class="eyebrow">Ferramentas do dia a dia</p><h2 class="stack-titulo">Minha stack</h2></div>
+                <div class="stack-lista" aria-label="Tecnologias">
+                    <div class="stack-item"><i class="fa-brands fa-python" aria-hidden="true"></i><span>Python</span></div>
+                    <div class="stack-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i><span>FastAPI</span></div>
+                    <div class="stack-item"><i class="fa-solid fa-database" aria-hidden="true"></i><span>SQL</span></div>
+                    <div class="stack-item"><i class="fa-brands fa-git-alt" aria-hidden="true"></i><span>Git</span></div>
+                    <div class="stack-item"><i class="fa-solid fa-table" aria-hidden="true"></i><span>PostgreSQL</span></div>
+                    <div class="stack-item"><i class="fa-brands fa-docker" aria-hidden="true"></i><span>Docker</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre secao" aria-labelledby="sobre-titulo">
+            <div class="secao-intro"><p class="eyebrow">01 / Sobre</p><h2 id="sobre-titulo" class="sobre-titulo">Código bem pensado<br>resolve problemas reais.</h2></div>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">Olá! Sou desenvolvedora back-end com foco em Python e criação de APIs REST usando FastAPI. Tenho experiência prática em projetos com PostgreSQL, SQLAlchemy, autenticação JWT e testes de integração com Pytest.</p>
+                <p class="sobre-paragrafo">Também utilizo Git, GitHub e Docker para manter o desenvolvimento organizado e facilitar a execução dos projetos. Gosto de transformar requisitos em soluções claras, consistentes e fáceis de manter.</p>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos secao" aria-labelledby="projetos-titulo">
+            <div class="secao-intro"><p class="eyebrow">02 / Projetos</p><h2 id="projetos-titulo" class="titulo-secao">Trabalhos em destaque</h2><p class="secao-descricao">Projetos práticos para aplicar conceitos de APIs, autenticação e regras de negócio.</p></div>
+            <div class="projetos-caixa">
+                <article class="projetos-card">
+                    <a class="projeto-imagem-link" href="https://github.com/sthefanypereira521-dotcom/mini_sistema_pizzaria" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do sistema de pizzaria">
+                        <img src="img/images.jpeg" alt="Imagem ilustrativa do sistema de pizzaria" class="projetos-imagens" loading="lazy" width="640" height="360">
+                    </a>
+                    <div class="projeto-conteudo"><p class="projeto-numero">Projeto 01 <span>API REST</span></p><h3 class="info-projeto">Sistema de pizzaria</h3>
+                    <p class="paragrafo-projetos">API para cadastro de usuários e gerenciamento de pedidos: criação, cancelamento e finalização, além de adicionar e remover itens.</p>
+                    <a class="projeto-link" href="https://github.com/sthefanypereira521-dotcom/mini_sistema_pizzaria" target="_blank" rel="noopener noreferrer">Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+                </article>
+                <article class="projetos-card">
+                    <a class="projeto-imagem-link" href="https://github.com/sthefanypereira521-dotcom/sistema_bancario" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do sistema bancário">
+                        <img src="img/image.png" alt="Imagem ilustrativa do sistema bancário" class="projetos-imagens" loading="lazy" width="640" height="360">
+                    </a>
+                    <div class="projeto-conteudo"><p class="projeto-numero">Projeto 02 <span>BACK-END</span></p><h3 class="info-projeto">Sistema bancário</h3>
+                    <p class="paragrafo-projetos">Cadastro e gerenciamento de clientes, autenticação JWT, depósitos e saques com validação de saldo e extrato de transações.</p>
+                    <a class="projeto-link" href="https://github.com/sthefanypereira521-dotcom/sistema_bancario" target="_blank" rel="noopener noreferrer">Ver no GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contatos" class="contatos secao" aria-labelledby="contatos-titulo">
+            <div class="contato-intro"><p class="eyebrow">03 / Contato</p><h2 id="contatos-titulo" class="titulo-secao">Vamos conversar?</h2><p class="secao-descricao">Envie uma mensagem. Ela será preparada para você no WhatsApp.</p></div>
+            <form class="formulario-contato" id="formulario">
+                <div class="grupo-form"><label for="nome">Seu nome</label><input type="text" placeholder="Como posso te chamar?" class="campo-form" id="nome" name="nome" autocomplete="name" required></div>
+                <div class="grupo-form"><label for="mensagem">Mensagem</label><textarea class="campo-form" placeholder="Escreva sua mensagem" id="mensagem" name="mensagem" rows="5" required></textarea></div>
+                <button type="submit" class="botao-form">Continuar no WhatsApp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></button>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
 
-
-    <section id="sobre" class="sobre">
-        <h3 class="sobre-titulo">Sobre Mim</h3>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                olá sou uma desenvolvedora Back-end em Python
-                com foco no desenvolvimento de APis REST
-                utilizando FastAPI.<br>
-                tenho experiencias em projetos práticos com
-                Python, FastAPI, PostgreSql, Sqlalchemy,
-                autenticação com JWT,
-                e testes de integração com Pytest.<br>
-                também utilizo Git, GitHub e docker
-                no desenvolvimento e na organização dos meus projetos.<br>
-            </p>
-        </div>
-    </section>
-
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetos">Meus Projetos</h2>
-        <div class="projetos-caixa">
-
-            <div class="projetos-card">
-                <img src="img/images.jpeg" alt="projeto 1" class="projetos-
-                imagens">
-                <h3 class="info-projeto">sistema de pizzaria</h3>
-                <p class="paragrafo-projetos">API para gerenciar pedidos de uma pizzaria: cadastro de usuario,
-                    autenticaçao, (criar pedidos,cancelar,finalizar), (adicionar itens ao pedidos e remover pedidos).
-                </p>
-
-                <a href="https://github.com/sthefanypereira521-dotcom/mini_sistema_pizzaria" targent="_blank"
-                    rel="noopener noreferree">ver projeto</a>
-            </div>
-
-
-            <div class="projetos-card">
-                <img src="img/image.png" alt="projeto 2" class="projetos-
-                imagens">
-                <h3 class="info-projeto">sistema bancario</h3>
-                <p class="paragrafo-projetos">cadastro e gerenciamento de cliente, autenticaçao com JWT, deposito e
-                    saque com validaçao de saldo e extrato de transaçoes por cliente.</p>
-
-                <a href="https://github.com/sthefanypereira521-dotcom/sistema_bancario" targent="_blank"
-                    rel="noopener noreferree">ver projeto</a>
-            </div>
-    </section>
-
-
-    <section id="contatos" class="contatos">
-
-        <h2 class="contatos-titilo">contatos</h2>
-        <form class="formulario-contato" id="formulario">
-
-            <div class="grupo-form">
-                <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem" required></textarea>
-            </div>
-
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
-        </form>
-    </section>
+    <footer class="rodape"><a class="marca" href="#inicio">SP<span>.</span></a><p>© <span id="ano"></span> Sthefany Pereira</p><a href="#inicio" class="voltar-topo">Voltar ao início ↑</a></footer>
 
     <script>
         const formulario = document.getElementById('formulario');
-
-        formulario.addEventListener('submit', function (event) {
+        const feedback = document.getElementById('form-feedback');
+        formulario.addEventListener('submit', (event) => {
             event.preventDefault();
+            if (!formulario.reportValidity()) return;
 
             const nome = document.getElementById('nome').value.trim();
             const mensagem = document.getElementById('mensagem').value.trim();
-            const telefone = '5522999708765';
-
-            const texto = `ola me chamo ${nome},${mensagem}`;
-            const msgFormatada = encodeURIComponent(texto);
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-
-            window.open(url, '_blank');
-
-
+            const telefone = '5522988472317';
+            const texto = `Olá, me chamo ${nome}. ${mensagem}`;
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+            const janela = window.open(url, '_blank', 'noopener,noreferrer');
+            if (!janela) feedback.textContent = 'O navegador bloqueou a nova aba. Permita pop-ups para abrir o WhatsApp.';
         });
-
+        document.getElementById('ano').textContent = new Date().getFullYear();
     </script>
-
 </body>
-
 </html>
